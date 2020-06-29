@@ -1,5 +1,5 @@
  <p align="center">
-  <img src="assets/logo.png">
+  <img src="public/assets/logo.png">
 </p>
 <h1>Sobre o Projeto</h1>
 
