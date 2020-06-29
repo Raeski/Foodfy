@@ -1,0 +1,19 @@
+{% extends "layout.njk" %}
+{% block content %}
+
+    <article class="card" >
+        {% for item in items%}
+        <div class="cards" id="{{item.id}}">
+            <div class="cards_image">
+                <img src="{{item.image}}" alt="">
+            </div>
+            <div>
+                <h2>{{item.title}}</h2>
+            </div>
+            <div>
+                <p>{{item.author}}</p>
+            </div>
+        </div>
+        {%endfor%}        
+    </article>  
+{% endblock %}
