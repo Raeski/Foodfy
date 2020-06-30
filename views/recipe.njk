@@ -16,9 +16,9 @@
                 <div class="ingredients">
                     <h2>Ingredientes</h2>             
                 </div>
-                <div>
-                    <p>MOSTRAR</p>  
-                    <p>ESCONDER</p>
+                <div class="show_button">
+                    <button id="meu_botao" type="button">ESCONDER</button>  
+                    <button id="meu_botao" class='handle-div' type="button">MOSTRAR</button>
                 </div>
             </div>
             <div class="list_ingred">
@@ -32,13 +32,13 @@
                 <div class="ingredients">
                     <h2>Modo de Preparo</h2>             
                 </div>
-                <div>
-                    <p>MOSTRAR</p> 
-                    <p>ESCONDER</p>  
+                <div class="show_button">
+                    <button id="meu_botao" class='handle-div' type="button">ESCONDER</button> 
+                    <button id="meu_botao" class='handle-div' type="button">MOSTRAR</button>  
                 </div>
             </div>
             <div class="information">
-                <p>{{recipe.preparation}}</p>
+                <span>{{recipe.preparation}}</span>
             </div>
             
             <div class="mostrar">
@@ -46,14 +46,15 @@
                     <h2>Informações adicionais</h2>             
                 </div>
                 <div class="">
-                    <p>MOSTRAR</p> 
-                    <p>ESCONDER</p>  
+                    <button>ESCONDER</button> 
+                    <button>MOSTRAR</button>  
                 </div>
             </div>
             <div class="information">
-                <p>{{recipe.information}}</p>
+                <span>{{recipe.information}}</span>
             </div>
         </div>
 
     </article>
+
 {% endblock content%}

@@ -268,3 +268,14 @@ a{
     color: #444444;
     line-height: 28px;
 }
+
+/* === SHOW BUTTON === */
+
+
+button #meu_botao {
+    visibility: hidden;
+}
+.information.hidden{
+    visibility: hidden;
+    margin-bottom: -40px;
+}
