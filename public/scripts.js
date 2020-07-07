@@ -7,13 +7,17 @@ for(let card of cards){
         window.location.href = `/recipes/${recipeId}`
     });
 }
+const testes = document.querySelectorAll('.information')
+const showIng = document.querySelectorAll('.collapsible')
 
-const show = document.querySelectorAll('.show_button')
-const selector = document.querySelector('.information')
 
-for (let bottom of show) {
-    bottom.addEventListener("click", function(){
-        selector.classList.add('hidden')
-        location.reload(false)
-    })
-} 
+for(let test of testes )
+    test.addEventListener('click', function (){
+        if(showIng.innerHTML == 'ESCONDER') {
+            test.classList.add('active');
+            showIng.innerHTML = 'Mostrar';
+        } else {
+            test.classList.remove('active');
+            showIng.innerHTML = 'ESCONDER';
+    }
+});
