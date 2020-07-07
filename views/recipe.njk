@@ -4,7 +4,7 @@
 
     <article class="card">
 
-        <div class="cards" id="{{recipe.id}}">
+        <div class="cards_" id="{{recipe.id}}">
             <div class="cards_image recipe" >
                 <img src="{{recipe.image}} " alt="">
             </div>
@@ -17,11 +17,10 @@
                     <h2>Ingredientes</h2>             
                 </div>
                 <div class="show_button">
-                    <button id="meu_botao" type="button">ESCONDER</button>  
-                    <button id="meu_botao" class='handle-div' type="button">MOSTRAR</button>
+                    <button type="button" class="collapsible">ESCONDER</button> 
                 </div>
             </div>
-            <div class="list_ingred">
+            <div class="information">
                 <ul>       
                     {% for ingredients in recipe.ingredients%}    
                     <li>{{ingredients}}</li>
@@ -33,8 +32,7 @@
                     <h2>Modo de Preparo</h2>             
                 </div>
                 <div class="show_button">
-                    <button id="meu_botao" class='handle-div' type="button">ESCONDER</button> 
-                    <button id="meu_botao" class='handle-div' type="button">MOSTRAR</button>  
+                    <button type="button" class="collapsible">ESCONDER</button> 
                 </div>
             </div>
             <div class="information">
@@ -46,14 +44,14 @@
                     <h2>Informações adicionais</h2>             
                 </div>
                 <div class="">
-                    <button>ESCONDER</button> 
-                    <button>MOSTRAR</button>  
+                    <button type="button" class="collapsible">ESCONDER</button> 
                 </div>
             </div>
             <div class="information">
                 <span>{{recipe.information}}</span>
             </div>
         </div>
+        
 
     </article>
 
