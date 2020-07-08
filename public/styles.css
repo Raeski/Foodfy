@@ -248,6 +248,7 @@ a{
 .ingredients h2{
     font-size: 24px;
     color: #111111;
+    padding: 30px 0;
 }
 .ingredients p {
     font-size: 12px;
@@ -267,9 +268,16 @@ a{
     font-size: 18px;
     color: #444444;
     line-height: 28px;
+    
 }
 
-
+.information ul {
+    font-family: Roboto-Regular;
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+    margin:20px auto;
+}
 
 /* === SHOW BUTTON === */
 
@@ -281,8 +289,10 @@ a{
 
 }
 .information.active  {
+    
     visibility: hidden;
     display: block;
+    margin-bottom: -130px;
 }
 button[type=button] {
     font-family: Roboto-Bold;
