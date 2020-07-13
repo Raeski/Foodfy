@@ -1,21 +1,48 @@
- <p align="center">
+<p align="center">
   <img src="public/assets/logo.png">
 </p>
-<h1>Sobre o Projeto</h1>
 
-* Projeto realizado cumprindo o desafio referente ao módulo 2 do bootcamp LaunchBase
 
+
+![](https://user-images.githubusercontent.com/46768410/87261666-74f70500-c48d-11ea-9a66-deb56a73f707.png)
+
+![](https://user-images.githubusercontent.com/46768410/87261772-eb940280-c48d-11ea-9c1c-f4dcfa7d35fa.png)
+
+
+
+
+# Sobre o Projeto
+<p align="justify"> O Foodfy é uma aplicação criado no bootcamp Launchbase da Rocketseat com o foco de gereciar receitas culinárias, o intuito é aprender o front-end e back-end de uma aplicação WEB.</p>
 
 > Status do Projeto: Em desenvolvimento :warning:
 
+## Tecnologias Utilizadas
 
+ * HTML
+ * CSS
+ * JavaScript
+ * Node.Js com Express
+ * Nunjucks
 
-<h2>Tecnologias</h2>
+### Instalação
 
-* Até o momento foi utilizado : HTML5, CSS3 E JavaScript
+No Terminal, clone o projeto:
 
-<h2>Instalação</h2>
+ > git clone https://github.com/Raeski/Foodfy.git
+ 
+Entre na pasta em que o projeto foi baixado:
 
-> git clone https://github.com/Raeski/Foodfy.git
+ > cd Foodfy.git
+ 
+Instale as dependências:
 
-> execute o index.html
+ > npm i
+ 
+Execute a aplicação:
+
+> npm start
+
+---
+
+<p>Feito por <b>Gustavo Raeski</b>  :octocat: | <a href="https://www.linkedin.com/in/gustavo-raeski/">Entre em contato</a></p>
+
