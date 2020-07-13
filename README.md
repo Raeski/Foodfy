@@ -16,7 +16,7 @@
 
 > Status do Projeto: Em desenvolvimento :warning:
 
-## Tecnologias Utilizadas
+## :rocket: Tecnologias Utilizadas
 
  * HTML
  * CSS
@@ -24,7 +24,7 @@
  * Node.Js com Express
  * Nunjucks
 
-### Instalação
+### :construction_worker: Instalação
 
 No Terminal, clone o projeto:
 
