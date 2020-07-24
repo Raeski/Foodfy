@@ -22,6 +22,9 @@ header img {
     padding-top:25px;
 
 }
+section {
+    padding-left: 115px;
+}
 .list {
     text-align: center;
     padding-left: 200px;
@@ -89,15 +92,16 @@ header img {
     font-size: 24px;
     color: #111111;
 }
-article {
-    max-width: 940px;
-    margin-left: 300px;
+article .card{
+    
 }
 .card {
-    max-width: 800px;
+    padding-left: 300px;
+    padding-right: 300px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 23px;
+    padding-top: 30px;
 }
 .cards_image img{
     width: 300px;
@@ -123,9 +127,11 @@ article {
 /* === FOOTER === */
 
 footer {
+    bottom: ;
     height:62px;
     background: #EEEEEE;
     margin-top: 50px;
+    
 }
 footer .text_footer {
     padding-top: 25px;
@@ -299,4 +305,68 @@ button[type=button] {
     font-size: 12px;
     color: #999999;
     background-color: white;
+}
+/* === ABOUT === */
+.about {
+    padding-left: 150px;
+    padding-right: 100px;
+}
+/* === ADMIN FOODY === */
+.backgr_admin {
+    background: #111111;
+}
+.initial { 
+    width: 100%;
+    display: inline-flex;
+    position: relative;
+}
+.initial button {
+    right: 0;
+    position: absolute;
+    margin-right: 368px;
+    font-family: Roboto;
+    font-size: 16px;
+    color: #FFFFFF;
+    background: #6558C3;
+    border-radius: 4px;
+    height: 50px;
+    width: 120px;
+}
+.initial h1 {
+    font-family: Roboto-Bold;
+    font-size: 24px;
+    color: #111111;
+}
+.create_recipe { 
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-top: 100px;
+}
+.form { 
+    padding-top: 50px;
+    font-family: Roboto-Bold;
+    font-size: 16px;
+    color: #111111;
+}
+.form input { 
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    width: 940px;
+    height: 49px;
+}
+.form .text { 
+    padding-bottom: 12px;
+
+}
+.form .add a{
+    display: flex;
+    font-family: Roboto-Bold;
+    font-size: 16px;
+    color: #6558C3;
+    text-align: right;
+    padding-top: 12px;
+}
+.form .input_adc input { 
+   height: 257px;
 }
