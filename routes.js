@@ -1,6 +1,7 @@
 const recipes = require("./data")
 const express = require('express') 
 const routes = express.Router()
+const admin = require('./admin')
 
 routes.get("/", function(req, res) { //Renderizando página index
     return res.render("index", {items: recipes})
@@ -22,6 +23,8 @@ routes.get("/recipes", function(req, res) {
 })
 
 
+
+routes.post("/admin", admin.post)
 routes.get("/admin", function(req,res) {
     return res.render('admin/admin')
 })

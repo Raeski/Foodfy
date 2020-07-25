@@ -1,5 +1,5 @@
 const cards = document.querySelectorAll('.cards');
-
+const inputs = document.querySelectorAll('.form')
 
 for(let card of cards){
     card.addEventListener('click', () => {
@@ -7,21 +7,15 @@ for(let card of cards){
         window.location.href = `/recipes/${recipeId}`
     });
 }
+//for(let input of inputs) {
+    input.addEventListener('click', () => {
+        input.innerHTML = "Olá"
+    });
+}
+
 const testes = document.querySelectorAll('.information')
 const showIng = document.querySelectorAll('.collapsible')
 
-
-/*for(let test of testes )
-    test.addEventListener('click', function (){
-        if(showIng.innerHTML == 'ESCONDER') {
-            test.classList.add('active');
-            showIng.innerHTML == 'Mostrar';
-        } else {
-            test.classList.remove('active');
-            showIng.innerHTML = 'ESCONDER';
-    }
-});
-*/
 for (let i =0; i < showIng.length; i++) {
     showIng[i].addEventListener('click', () => {
         if(testes[i]. classList.contains('active')) {

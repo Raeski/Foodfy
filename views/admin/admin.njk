@@ -12,7 +12,8 @@
                 <a href="/"><img src="../assets/logoadmin.png" alt="Logo Foodfy"></a>
             </div>
         </header>
-        <div class="create_recipe">
+        
+        <form class="create_recipe" method="POST" action="/admin">
             <div class="initial">
                 <h1>Criando receita</h1>
                 <button type="submit">Salvar receita</button>
@@ -27,7 +28,7 @@
             <div class="form">
                 <div class="text">Ingredientes</div>
                 <input type="text"
-                name="avatar_url"
+                name="recipes[]"
                 value=""
                 >
                 <div class="add">
@@ -39,19 +40,19 @@
             <div class="form">
                 <div class="text">Modo de preparo</div>
                 <input type="text"
-                name="avatar_url"
+                name="create"
                 value=""
                 >
                 <div class="add">
                     <a href="http://">
                     Adicionar novo passo
                     </a>
-                    </div>
+                </div>
             </div>
             <div class="form input_adic">
                 <div class="text">Informações adicionais</div>
                 <input type="text"
-                name="avatar_url"
+                name="information"
                 value=""
                 >
             </div>
