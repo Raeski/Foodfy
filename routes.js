@@ -23,6 +23,8 @@ routes.get("/recipes", function(req, res) {
 })
 
 
+/* === ADMIN === */
+
 
 routes.post("/admin", admin.post)
 routes.get("/admin", function(req,res) {
