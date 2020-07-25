@@ -25,30 +25,23 @@
                 value=""
                 >
             </div>
-            <div class="form">
-                <div class="text">Ingredientes</div>
-                <input type="text"
-                name="recipes[]"
-                value=""
-                >
-                <div class="add">
-                    <a href="http://">
-                    Adicionar novo ingrediente
-                    </a>
+            <div class="item">
+                <h4>Ingredientes</h4>
+            <div id="ingredients">
+                <div class="ingredient">
+                    <input type="text" name="ingredients" placeholder="Ingrediente" value=" ingredient">
                 </div>
             </div>
-            <div class="form">
-                <div class="text">Modo de preparo</div>
-                <input type="text"
-                name="create"
-                value=""
-                >
-                <div class="add">
-                    <a href="http://">
-                    Adicionar novo passo
-                    </a>
+            <button type="button" class="add-ingredient">Adicionar novo ingrediente</button>
+            </div>
+            <div class="item">
+                <h4>Modo de preparo</h4>
+            <div id="ingredients" >
+                <div class="ingredient">
+                    <input type="text" name="ingredients" value=" ingredient">
                 </div>
             </div>
+            <button type="button" class="add-ingredient">Adicionar novo passo</button>
             <div class="form input_adic">
                 <div class="text">Informações adicionais</div>
                 <input type="text"
@@ -57,6 +50,25 @@
                 >
             </div>
         </div>
-        <script src="/scripts.js"></script>
+        <script>
+            function addIngredient() {
+            const ingredients = document.querySelector("#ingredients");
+            const fieldContainer = document.querySelectorAll(".ingredient");
+
+            // Realiza um clone do último ingrediente adicionado
+            const newField = fieldContainer[fieldContainer.length - 1].cloneNode(true);
+
+            // Não adiciona um novo input se o último tem um valor vazio
+            if (newField.children[0].value == "") return false;
+
+            // Deixa o valor do input vazio
+            newField.children[0].value = "";
+            ingredients.appendChild(newField);
+            }
+
+            document
+            .querySelector(".add-ingredient")
+            .addEventListener("click", addIngredient);
+        </script>
     </body>
 </html>
