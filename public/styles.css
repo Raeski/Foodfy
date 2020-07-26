@@ -380,3 +380,10 @@ button.add-ingredient{
 .form .input_adc input { 
    height: 257px;
 }
+.create input {
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    width: 940px;
+    height: 49px;
+}
