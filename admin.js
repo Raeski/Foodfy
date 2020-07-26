@@ -11,9 +11,19 @@ exports.post = function (req, res) {
       if (req.body[key] == "")
           return res.send('Please, fill all fields')
   }
-  data.recipes.push(req.body)
 
-  fs.writeFile('data.json', JSON.stringify(data, null, 2), function(){
+  let {avatar_url, ingredients, create, information} = req.body
+  const id = Number(data.recipes.length + 1)
+  
+  data.recipes.push({
+    id,
+    avatar_url,
+    ingredients,
+    create,
+    information,
+  })
+
+  fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err){
     if (err) return res.send("Write file error")
 
     return res.redirect("/admin")
