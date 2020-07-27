@@ -26,6 +26,7 @@ routes.get("/recipes", function(req, res) {
 /* === ADMIN === */
 
 
+routes.get('/admin/:id', admin.show)
 routes.post("/admin", admin.post)
 routes.get("/admin", function(req,res) {
     return res.render('admin/admin')

@@ -1,6 +1,22 @@
 const fs = require('fs')
 const data = require('./data.json')
 
+exports.show = function (req,res) {
+  const {id} = req.params
+
+  const foundRecipes = data.recipes.find(function(recipe) {
+    return recipe.id == id
+  })
+  if(!foundRecipes) return res.send("Recipes not found!")
+
+  const recipes = {
+    ...foundRecipes,
+    //ingredients: foundRecipes.ingredients.split(","),
+    create:"",
+  }
+
+  return res.render ("admin/show", {recipes})
+}
 //create
 exports.post = function (req, res) {
   // req.query
