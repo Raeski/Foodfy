@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Foodfy</title>
+</head>
+    <body>
+        <header class="backgr_admin">
+            <div id="flex">
+                <a href="/"><img src="../assets/logoadmin.png" alt="Logo Foodfy"></a>
+            </div>
+        </header>
+        
+    <article class="card">
+
+        <div class="cards_" id="{{recipe.id}}">
+            <div class="cards_image recipe" >
+                <img src="{{recipes.avatar_url}} " alt="">
+            </div>
+            <div class="title_author">
+                <h1 class="title_recipe">{{recipe.title}}</h1>
+                <p class="author_recipe">{{recipe.author}}</p>
+            </div>
+            <div class="mostrar">
+                <div class="ingredients">
+                    <h2>Ingredientes</h2>             
+                </div>
+            </div>
+            <div class="information">
+                <ul>       
+                    {% for ingredient in recipes.ingredients%}    
+                        <li>{{ingredient}}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+             <div class="mostrar">
+                <div class="ingredients">
+                    <h2>Modo de Preparo</h2>             
+                </div>
+            </div>
+            <div class="information">
+                <span>{{recipes.create}}</span>
+            </div>
+            
+            <div class="mostrar">
+                <div class="ingredients">
+                    <h2>Informações adicionais</h2>             
+                </div>
+            </div>
+            <div class="information">
+                <span>{{recipes.information}}</span>
+            </div>
+        </div>
+        
+
+    </article>
+</html>
