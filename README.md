@@ -1,18 +1,11 @@
 <p align="center">
-  <img src="public/assets/logo.png">
+  <a href="https://fontmeme.com/netflix-font/"><img src="https://fontmeme.com/permalink/200825/a753a2772cccff2ac042e067f9b8ad40.png" alt="netflix-font" border="0"></a>
 </p>
 
 
 
-![](https://user-images.githubusercontent.com/46768410/87261666-74f70500-c48d-11ea-9a66-deb56a73f707.png)
-
-![](https://user-images.githubusercontent.com/46768410/87261772-eb940280-c48d-11ea-9c1c-f4dcfa7d35fa.png)
-
-
-
-
 # Sobre o Projeto
-<p align="justify"> O Foodfy é uma aplicação criado no bootcamp Launchbase da Rocketseat com o foco de gereciar receitas culinárias, o intuito é aprender o front-end e back-end de uma aplicação WEB.</p>
+<p align="justify"> Clone do front-end desktop da Netflix utilizando ReactJs, nesse projeto é consumido a API do site The Movie Database (TMDB) para apresentação dos filmes e séries </p>
 
 > Status do Projeto: Em desenvolvimento :warning:
 
@@ -21,14 +14,14 @@
  * HTML
  * CSS
  * JavaScript
- * Node.Js com Express
- * Nunjucks
+ * ReactJs
+ * API TMDB
 
 ### :construction_worker: Instalação
 
 No Terminal, clone o projeto:
 
- > git clone https://github.com/Raeski/Foodfy.git
+ > git clone https://github.com/Raeski/clonenetflix-react
  
 Entre na pasta em que o projeto foi baixado:
 
